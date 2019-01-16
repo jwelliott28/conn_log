@@ -1,12 +1,15 @@
 #Jared Elliott
-#Last Updated: 4/28/16
+#Last Updated: 1/16/2019
 #Connection_Log: Checks for internet connection and logs 
 #		 a disconnect if no signal is detected
+
 import urllib2
 import datetime
 import socket
 
 #Function to test for internet signal when called
+#Need to edit function so that it checks/pings router first and then Google. Narrows down troubleshooting and where issue lies
+
 def internet_on():
     try:
         response=urllib2.urlopen('http://google.com',timeout=3)
