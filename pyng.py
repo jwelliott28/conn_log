@@ -1,9 +1,9 @@
 import os
 
-router   = "67.129.234.227"
+router   = "192.168.0.1"
 hostname = "google.com"
 hostname_response = os.system("ping -c 1 " + hostname)
-router_response = os.system("ping -c 1" + router)
+router_response = os.system("ping -c 1 " + router)
 
 if hostname_response == 0:
 	print hostname, 'is up!'
